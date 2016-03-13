@@ -1,0 +1,16 @@
+---
+name: resources
+url: /resources
+controller: ResourcesController
+---
+
+<div class="grid-container">
+  <h1>Hey, {{username}}, Welcome to our resources list!</h1>
+
+  <div ng-repeat="resource in resources">
+  	<h2><a ui-sref="resource({ id: resource.id })">{{resource.name}}</a></h2>
+  	<p>{{resource.previewText}}</p>
+  </div>
+  
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/CuH3tJPiP-U" frameborder="0" allowfullscreen></iframe>
+</div>
